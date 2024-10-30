@@ -1,0 +1,1 @@
+This folder is intentionally empty because data files are too big. You can download the `.zip` file on: <https://www.kaggle.com/datasets/benhamner/sf-bay-area-bike-share> and unzip it on this folder.
