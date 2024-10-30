@@ -1,0 +1,39 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pybike"
+
+version = "0.1.0"
+
+description = "A python package for training transformer-based models for demand prediction."
+
+readme = "README.md"
+
+license = { text = "MIT" }
+
+authors = [
+    { name = "Alejandro Requena Bermejo", email = "rb.jandro@gmail.com" }
+]
+
+dependencies = [
+    "torch>=1.7.0",
+    "numpy>=1.19.2",
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Repository" = "https://github.com/ale-knk/bike-rental-demand-pred"
+
+[tool.setuptools.packages.find]
+include = ["pybike"]
+exclude = ["data", "output"]
