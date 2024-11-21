@@ -1,20 +1,16 @@
 # Bike Rental Demand Prediction
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)
 ![Status](https://img.shields.io/badge/status-Under%20Development-yellow.svg)
-
-
-## Tech Stack
-
--   **Python 3.12+**
--   **Python Libraries**: `pandas`, `numpy`, `scikit-learn`, `torch`, `seaborn`, `pylance`, `ruff`, etc.
--   **Python Package Development**
--   **Command Line Tools**
--   **Version Control**: Git
--   **Environment Management**: Conda
--   **Containerization**: Docker
-
+![Conda](https://img.shields.io/badge/conda-4.10.3-blue.svg?logo=conda&logoColor=white)
+![Python Version](https://img.shields.io/badge/python-3.12%2B-blue.svg)
+![Pandas](https://img.shields.io/badge/pandas-1.4.2-brightgreen.svg?logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-1.21.0-blue.svg?logo=numpy&logoColor=white)
+![PyTorch](https://img.shields.io/badge/pytorch-1.9.0-brightgreen.svg?logo=pytorch&logoColor=white)
+![Seaborn](https://img.shields.io/badge/seaborn-0.11.1-blue.svg?logo=seaborn&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/scikit--learn-0.24.2-orange.svg?logo=scikit-learn&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/git-F05032.svg?logo=git&logoColor=white)
 
 
 ## Introduction
