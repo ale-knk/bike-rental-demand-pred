@@ -2,13 +2,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Status](https://img.shields.io/badge/status-Under%20Development-yellow.svg)
-![Conda](https://img.shields.io/badge/conda-4.10.3-blue.svg?logo=conda&logoColor=white)
 ![Python Version](https://img.shields.io/badge/python-3.12%2B-blue.svg)
-![Pandas](https://img.shields.io/badge/pandas-1.4.2-brightgreen.svg?logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/numpy-1.21.0-blue.svg?logo=numpy&logoColor=white)
-![PyTorch](https://img.shields.io/badge/pytorch-1.9.0-brightgreen.svg?logo=pytorch&logoColor=white)
-![Seaborn](https://img.shields.io/badge/seaborn-0.11.1-blue.svg?logo=seaborn&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/scikit--learn-0.24.2-orange.svg?logo=scikit-learn&logoColor=white)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/git-F05032.svg?logo=git&logoColor=white)
 
@@ -17,7 +11,7 @@
 
 Welcome to my professional portfolio project in the fields of Artificial Intelligence, Data Science and Software Engineering. This repository focuses on predicting bicycle rental demand in an urban setting. The goal is to establish a solid foundation for training predictive models that can anticipate bike rental needs.
 
-The primary aim isn't to create the most advanced model possible—which would entail long training times and high computational costs—but to develop a versatile software interface. This interface is packaged as a Python package, featuring a suite of classes, functions, and command-line tools that simplify the model training process.
+The primary aim isn't to create the most accurable model -wich would entail long training times and high computational costs—but to develop a versatile software interface. This interface is packaged as a Python package, featuring a suite of classes, functions, and command-line tools that simplify the model training process.
 
 Considering the sequential nature of the bike rental data and the substantial advancements brought by Transformer-based architectures in AI, this project employs Transformer models to effectively predict rental demand.
 
@@ -46,6 +40,27 @@ Considering the sequential nature of the bike rental data and the substantial ad
     pip install .
     ```
 
+## Source Data
+
+The data for this project is sourced from Kaggle. You can download the dataset (a `.zip` file) from [Kaggle Bike Sharing Dataset](https://www.kaggle.com/datasets/benhamner/sf-bay-area-bike-share).
+
+A step-by-step example on how to setup `data/` directory could be:
+
+1. **Download the dataset**
+
+    Visit the [Kaggle Bike Sharing Dataset](https://www.kaggle.com/datasets/benhamner/sf-bay-area-bike-share) page and download the zip file containing the data.
+    
+
+2. **Decompress the dataset**
+
+    Once downloaded, decompress the zip file and place the contents into the `data/` directory of the project:
+
+    ```bash
+    unzip path_to_zip_file -d data/
+    ```
+
+With this in place, `pybike` package can be freely used.
+
 ## Usage
 
 Overall, this package provides two primary tools: one for training models and another for making predictions with them.
@@ -65,17 +80,19 @@ For both tools, you must specify an output directory where various files generat
 
 Internally, the project is organized into several modules, each responsible for specific tasks:
 
--   **`pybike.preprocessing`**: Handles data preprocessing, including cleaning and transforming raw data to prepare it for model training.
--   **`pybike.trips`** & **`pybike.stations`**: Define interfaces using `pylance` to work efficiently with trip and station data, ensuring optimal data handling and manipulation.
--   **`pybike.dataloader`**: Responsible for preparing and initializing data loaders that feed data into the models during training and evaluation.
--   **`pybike.model`**: Defines the model architecture using `PyTorch`, implementing Transformer-based structures tailored for demand prediction.
--   **`pybike.train`**: Facilitates the training of models, managing the training loop, optimization, and model checkpointing.
--   **`pybike.predict`**: Enables inference with trained models, allowing users to generate predictions based on new input data.
--   **`pybike.tools`**: Contains the two command-line tools, `train` and `predict`, which provide a user-friendly interface for model training and prediction tasks.
+
+| Module                  | Description                                                                                                                                                  |
+|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `pybike.preprocessing`  | Handles data preprocessing, including cleaning and transforming raw data to prepare it for model training.                                                 |
+| `pybike.trips`          | Defines interfaces using `pylance` to work efficiently with trips data, ensuring optimal data handling and manipulation.                                      |
+| `pybike.stations`       | Defines interfaces using `pylance` to work efficiently with stations data, ensuring optimal data handling and manipulation.                                   |
+| `pybike.dataloader`     | Responsible for preparing and initializing data loaders that feed data into the models during training and evaluation.                                     |
+| `pybike.model`          | Defines the model architecture using `PyTorch`, implementing Transformer-based structures tailored for demand prediction.                                    |
+| `pybike.train`          | Facilitates the training of models, managing the training loop, optimization, and model checkpointing.                                                       |
+| `pybike.predict`        | Enables inference with trained models, allowing users to generate predictions based on new input data.                                                      |
+| `pybike.tools`          | Contains the two command-line tools, `train` and `predict`, which provide a user-friendly interface for model training and prediction tasks.                 |
 
 Each module is designed with modularity and scalability in mind, ensuring that the codebase remains maintainable and extensible as the project evolves.
-
-
 
 ## Acquired Skills
 
@@ -93,7 +110,7 @@ This project encompasses a wide range of skills in both Data Science and Artific
 -   **Object-Oriented Programming (OOP)**: Designing classes and modular structures that facilitate code extensibility and maintainability.
 -   **Good Programming Practices**:
     -   **Linting and Formatting**: Utilizing tools like `ruff` to ensure code quality and maintain a consistent style.
-    -   **Static Typing**: Implementing type annotations to enhance readability and ease maintenance, supported by `pylance`.
+    -   **Static Typing**: Implementing type annotations to enhance readability and ease maintenance.
 -   **Python Package Development**: Creating structured packages that simplify code distribution, installation, and reuse.
 -   **Dependency Management**: Using virtual environments and package management tools to efficiently handle project dependencies.
 -   **Task Automation**: Developing command-line tools to automate common processes such as model training and prediction generation.
