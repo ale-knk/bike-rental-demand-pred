@@ -21,8 +21,15 @@ authors = [
 ]
 
 dependencies = [
-    "torch>=1.7.0",
-    "numpy>=1.19.2",
+    "torch==2.5.0",
+    "numpy==2.1.2",
+    "matplotlib==3.9.2",
+    "joblib==1.4.2",
+    "pandas==2.2.3",
+    "polars==1.10.0",
+    "scikit-learn==1.5.2",
+    "python-dotenv==1.0.1",
+    "pydantic==2.9.2"
 ]
 
 classifiers = [
@@ -37,3 +44,6 @@ classifiers = [
 [tool.setuptools.packages.find]
 include = ["pybike"]
 exclude = ["data", "output"]
+
+[project.scripts]
+train = "pybike.tools.train:main"
