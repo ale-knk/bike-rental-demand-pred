@@ -5,12 +5,12 @@ ___
 
 This page introduces a model designed to predict bike-sharing routes. It begins by defining the mathematical representations of stations and bikes, followed by modeling the routes between stations using a weighted directed graph. Next, the problem of predicting the next route is formulated, and the model's architecture is described, incorporating embeddings, fully connected layers, and a Transformer encoder. Finally, the loss function used to train the model is detailed, and the complete architecture is summarized.
 
-#### **1. Representation of Stations and Bikes**
+### **1. Representation of Stations and Bikes**
 
 -   **Stations**: \( S = \{s_i\}_{i=1,...,n_s} \), where each station \( s_i \) is represented by its longitude and latitude coordinates \( (x^i, y^i) \).
 -   **Bikes**: \( B = \{b_i\}_{i=1,...,n_b} \), where each bike \( b_i \) can be assigned to a specific station at any given time.
 
-#### **2. Routes Between Stations**
+### **2. Routes Between Stations**
 
 -   **Weighted Directed Graph**: A weighted directed graph \( G = (V, E) \) is used to model the routes between stations.
     -   **Vertices (V)**: Set of stations \( S \).
