@@ -15,6 +15,17 @@ The primary aim isn't to create the most accurable model -wich would entail long
 
 Considering the sequential nature of the bike rental data and the substantial advancements brought by Transformer-based architectures in AI, this project employs Transformer models to effectively predict rental demand.
 
+## Quick Links
+
+
+| Topic                         | Description                                                                                                        | Link                                                    |
+|-------------------------------|--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+| **Theoretical Model Architecture** | Information on the theoretical foundations and architectural design of the model.                                | [model_architecture.md](./docs/model_architecture.md)  |
+| **Model Implementation in Python** | Examination of the Python implementation of the Transformer-based model.                                         | [`pybike.model`](pybike/model.py)                          |
+| **Data Preprocessing**           | Details on data cleaning and transformation processes.                                                           | [`pybike.preprocessing`](pybike/preprocessing.py)          |
+| **Training Process**             | Information on the training loop, optimization methods, and metrics monitorization.                                  | [`pybike.train`](pybike/train.py)                          |
+| **Software Engineering Practices** | Overview of object-oriented design, linting, static typing, and other best practices used in the project.          | [Acquired Skills](#acquired-skills)                     |
+
 
 ## Installation
 
@@ -63,13 +74,13 @@ With this in place, `pybike` package can be freely used.
 
 ## Usage
 
-Overall, this package provides two primary tools: one for training models and another for making predictions with them.
+Overall, this package provides two primary tools: one for training models and another for evaluating them.
 
 Both tools require a configuration file to execute. Examples of these configuration files can be found in the `config_examples/` directory.
 
 ```bash
 train --config_path path_to_your_config_file
-predict --config_path path_to_your_config_file
+evaluate --config_path path_to_your_config_file
 ```
 
 For both tools, you must specify an output directory where various files generated during execution will be saved. Examples of these output files are available in the `output_examples/` directory.
@@ -77,6 +88,9 @@ For both tools, you must specify an output directory where various files generat
 
 
 ## Implementation
+
+
+This project uses a Transformer-based model for predicting bike rental demand. Details about its architecture are provided in `./docs/model_architecture.md`.
 
 Internally, the project is organized into several modules, each responsible for specific tasks:
 
@@ -90,7 +104,7 @@ Internally, the project is organized into several modules, each responsible for 
 | `pybike.model`          | Defines the model architecture using `PyTorch`, implementing Transformer-based structures tailored for demand prediction.                                    |
 | `pybike.train`          | Facilitates the training of models, managing the training loop, optimization, and model checkpointing.                                                       |
 | `pybike.predict`        | Enables inference with trained models, allowing users to generate predictions based on new input data.                                                      |
-| `pybike.tools`          | Contains the two command-line tools, `train` and `predict`, which provide a user-friendly interface for model training and prediction tasks.                 |
+| `pybike.tools`          | Contains the two command-line tools, `train` and `evaluate, which provide a user-friendly interface for model training and prediction tasks.                 |
 
 Each module is designed with modularity and scalability in mind, ensuring that the codebase remains maintainable and extensible as the project evolves.
 
