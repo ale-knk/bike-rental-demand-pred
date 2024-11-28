@@ -1,0 +1,5 @@
+{
+  "train_dir": "./outputs/train",
+  "out_dir": "./outputs/eval",
+  "config_dataloader": {"batch_size": 300}
+}

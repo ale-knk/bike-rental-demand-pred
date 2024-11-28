@@ -1,0 +1,20 @@
+{
+  "config_dataloader": { "seq_len": 41, "batch_size": 300, "shuffle": true },
+  "config_model": {
+    "n_stations": 70,
+    "d_model": 128,
+    "num_layers": 4,
+    "num_heads": 8,
+    "ids_embedding_dim": 16,
+    "coords_embedding_dim": 32,
+    "time_embedding_dim": 32,
+    "dropout": 0.1
+  },
+  "config_optimizer": {
+    "lr": 0.0001,
+    "betas": [0.9, 0.98],
+    "eps": 1e-9,
+    "weight_decay": 0.01
+  },
+  "out_dir": "./outputs/train"
+}
