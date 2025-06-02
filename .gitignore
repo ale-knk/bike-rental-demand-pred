@@ -1,0 +1,9 @@
+.env
+todo.md 
+.vscode/
+.DS_Store
+*.ipynb
+*.egg-info/
+data/*.csv
+data/*.zip
+outputs/
